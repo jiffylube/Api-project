@@ -1,4 +1,4 @@
-# nasa-api-project
+# api-project
 
 # Description
 
