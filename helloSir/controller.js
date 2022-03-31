@@ -16,7 +16,7 @@ export const getHelloSir = async (req, res) => {
     const helloSir = await helloSir.findById(id);
 
     if (helloSir) {
-      return res.json(dataOne);
+      return res.json(helloSir);
     }
 
     res.status(400).json({ message: "Data not found!" });
