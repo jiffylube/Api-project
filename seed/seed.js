@@ -1,16 +1,16 @@
-import db from "../db/connection.js";
-import HelloSir from "../helloSir/model/helloSirmodel.js";
-import helloSir from "../helloSir/helloSir.json" assert { type: "json" };
+import db from "../db/connection.js"
+import Avocados from "../avocados/model/avocadosModel.js"
+import avocado from "../avocados/avocado.json" assert { type: "json" }
 
 const insertData = async () => {
   // reset database
-  db.dropDatabase();
+  db.dropDatabase()
 
   // insert into database
-  await HelloSir.insertMany(helloSir);
+  await Avocados.insertMany(avocado)
 
   // close db connection (done)
-  db.close();
-};
+  db.close()
+}
 
-insertData();
+insertData()

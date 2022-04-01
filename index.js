@@ -1,14 +1,10 @@
-import { Router } from "express";
-import helloSirRoutes from "./helloSir/router.js";
-// import helloSirRoutes2 from "./hellSir/router2.js";
+import { Router } from "express"
+import avocadoRoutes from "./avocados/router.js"
 
+const router = Router()
 
-const router = Router();
+router.get("/", (req, res) => res.send("This is the api root!"))
 
-router.get("/", (req, res) => res.send("This is the api root!"));
+router.use("/", avocadoRoutes)
 
-router.use("/", helloSirRoutes);
-// router.use("/", helloSirRoutes2);
-
-
-export default router;
+export default router
