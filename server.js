@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 9000
 
 app.use(express.json())
 
-app.use("/api", routes)
+app.use("/", routes)
 
 db.on("connected", () => {
   console.clear()
