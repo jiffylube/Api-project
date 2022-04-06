@@ -1,13 +1,17 @@
 # Avocado API project
 
 Json Api utilizing mongoose and express.
+
 Beautiful data extracted from https://hassavocadoboard.com/
 
 
 # Description
 
-**All avocados endpoint deployed via Heroku
+**All avocados endpoint deployed via Heroku.
+
 https://avocados-api.herokuapp.com/avocados**
+
+# Endpoints
 
 **Endpoints**
 - POST	/avocados
