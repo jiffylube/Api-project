@@ -8,11 +8,11 @@ Beautiful data extracted from https://hassavocadoboard.com/
 
 
 **Endpoints**
-POST	/avocados
-GET	/avocados/:id
-GET	/avocados/:id
-PUT	/avocados/:id
-DELETE	/avocados/:id
+- POST	/avocados
+- GET	/avocados/:id
+- GET	/avocados/:id
+- PUT	/avocados/:id
+- DELETE	/avocados/:id
 
 
 **JSON Schema**
