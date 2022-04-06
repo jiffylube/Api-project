@@ -5,7 +5,7 @@
 Json Api utilizing mongoose and express.
 Beautiful data extracted from https://hassavocadoboard.com/
 
-**All avocados endpoint https://avocados-api.herokuapp.com/avocados**
+   **All avocados endpoint https://avocados-api.herokuapp.com/avocados**
 
 
 **Endpoints**
