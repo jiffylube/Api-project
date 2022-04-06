@@ -1,4 +1,4 @@
-# api-project
+# Avocado API project
 
 # Description
 
