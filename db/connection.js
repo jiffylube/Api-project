@@ -10,8 +10,22 @@ mongoose.set("debug", true)
 mongoose.set("returnOriginal", false)
 
 // Setup connection for MongoDB
+// ----------------------------------------------------------------
+
+let connectionString = process.env.MONGODB_URI;
+let MONGODB_URI = connectionString || "mongodb://127.0.0.1:27017/${DATABASE_NAME}";
+mongoose.connect(
+  MONGODB_URI,
+  mongooseConfig,
+  () => console.log(chalk.blue(`success connected to the database`)),
+  err => console.log(err)
+);
+
+// ----------------------------------------------------------------
+
+
 mongoose
-  .connect(`mongodb://127.0.0.1:27017/${DATABASE_NAME}`, mongooseConfig)
+  .connect(MONGODB_URI , mongooseConfig)
   .catch((error) =>
     console.error("Error connecting to MongoDB: ", error.message)
   )
