@@ -17,7 +17,7 @@ let MONGODB_URI = connectionString || "mongodb://127.0.0.1:27017/${DATABASE_NAME
 mongoose.connect(
   MONGODB_URI,
   mongooseConfig,
-  () => console.log(chalk.blue(`success connected to the database`)),
+  () => console.log(`success connected to the database`),
   err => console.log(err)
 );
 
