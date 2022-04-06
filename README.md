@@ -6,7 +6,8 @@ Beautiful data extracted from https://hassavocadoboard.com/
 
 # Description
 
-**All avocados endpoint https://avocados-api.herokuapp.com/avocados**
+**All avocados endpoint deployed via Heroku
+https://avocados-api.herokuapp.com/avocados**
 
 **Endpoints**
 - POST	/avocados
